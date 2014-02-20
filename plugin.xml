@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.devgeeks.phonelistener"
+    version="0.6.0">
+
+	<name>PhoneListener</name>
+    <repo>https://github.com/vilmar23/cordova-plugin-hello2.git</repo>
+
+    <js-module src="www/PhoneListener.js" name="PhoneListener">
+        <clobbers target="js/PhoneListener.js" />
+    </js-module>
+
+	<platform name="android">
+
+		<config-file target="res/xml/config.xml" parent="/*">
+          <feature name="PhoneListener" >
+              <param name="android-package" value="org.devgeeks.phonelistener"/>
+          </feature>
+		</config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+
+		<source-file src="src/android/PhoneListener.java" target-dir="src/org/devgeeks/" />
+    </platform>
+
+
+</plugin>
