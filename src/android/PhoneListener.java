@@ -21,15 +21,15 @@ import android.content.IntentFilter;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.PluginResult;
-import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.api.CordovaInterface;
+import org.apache.cordova.api.Plugin;
+import org.apache.cordova.api.PluginResult;
 
 /**
 * @author Tommy-Carlos Williams,
 * Huge chunks lifted/adapted from the NextworkManager core PhoneGap plugin
 */
-public class PhoneListener extends CordovaPlugin {
+public class PhoneListener extends Plugin {
 
     public static final String TYPE_NONE = "NONE";
     private static final String LOG_TAG = "PhoneListener";
