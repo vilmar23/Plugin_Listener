@@ -8,7 +8,7 @@
     <repo>https://github.com/vilmar23/cordova-plugin-hello2.git</repo>
 
     <js-module src="www/PhoneListener.js" name="PhoneListener">
-        <clobbers target="js/PhoneListener.js" />
+        <clobbers target="window.PhoneListener" />
     </js-module>
 
 	<platform name="android">
