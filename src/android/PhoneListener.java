@@ -10,7 +10,7 @@
 * Update by Matt McGrath to work with Cordova version of PhoneGap 1.6 upwards - 01/06/2012
 *
 */
-package com.example.plugin;  
+package com.example.plugin;
 
 import org.json.JSONArray;
 
