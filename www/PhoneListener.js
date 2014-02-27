@@ -1,6 +1,8 @@
-var exec = require('cordova/exec');
+var argscheck = require('cordova/argscheck'),
+    utils = require('cordova/utils'),
+    exec = require('cordova/exec');
 
-var PhoneListener = function(src, successCallback, errorCallback, statusCallback) {
+var PhoneListener = function() {
 
 };
 
@@ -19,7 +21,7 @@ PhoneListener.prototype.start = function(successCallback, failureCallback) {
 /**
  * Stop Listener.
  */
-PhoneListener.prototype.stop = function() {
+PhoneListener.prototype.stop = function(successCallback, failureCallback) {
     exec(
         successCallback,
         failureCallback,

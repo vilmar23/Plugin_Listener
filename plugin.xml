@@ -15,7 +15,7 @@
 
 		<config-file target="res/xml/config.xml" parent="/*">
           <feature name="PhoneListener" >
-              <param name="android-package" value="org.devgeeks.phonelistener"/>
+              <param name="android-package" value="org.devgeeks.PhoneListener"/>
           </feature>
 		</config-file>
 
