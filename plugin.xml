@@ -5,7 +5,7 @@
     version="0.6.0">
 
 	<name>PhoneListener</name>
-    <repo>https://github.com/vilmar23/cordova-plugin-hello2.git</repo>
+    <repo>https://github.com/vilmar23/Plugin_Listener.git</repo>
 
     <js-module src="www/PhoneListener.js" name="PhoneListener">
         <clobbers target="window.PhoneListener" />
