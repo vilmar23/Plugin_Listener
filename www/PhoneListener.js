@@ -1,3 +1,4 @@
+alert("phonelistener");
 var PhoneListener = {
     start: function(successCallback, failureCallback) {
       return cordova.exec(
